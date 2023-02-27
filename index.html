@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Mateusz Szymański CV</title>
+    <!--
+        Google Fonts
+        CSS Rules:
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Hurricane', cursive;
+        font-family: 'Lobster', cursive;
+        font-family: 'Noto Serif', serif;
+        font-family: 'Roboto Slab', serif;
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hurricane&family=Lobster&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__name"><span class="golden-letter">M</span>ateusz <span class="golden-letter">S</span>zymański</h1>
+        <span class="header__position golden-letter">Junior - Frontend Developer</span>
+        <img src="img/avatar.png" class="header__avatar"/>        
+    </header>
+    <div class="header__shadow"></div>
+    <main>
+        <button class="about-me-button">O mnie</button>
+        <article class="about invisible">
+            <div class="about__box">
+                <h3 class="about__box-title">Kilka słów o mnie</h3>
+                <p class="about__box-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla sollicitudin mi, vitae venenatis nisl rutrum eget. Pellentesque at pharetra  mi. Nullam mattis convallis justo feugiat vestibulum. Nullam volutpat metus eget leo vulputate, sed dictum odio venenatis. Nullam dolor lorem, lacinia in dolor sed, pellentesque rhoncus augue. Proin sit amet lectus porta, sodales orci nec, consequat magna. Donec pulvinar consequat metus at mollis. Fusce pharetra turpis quis mauris ullamcorper, et feugiat felis rhoncus. Aenean dapibus feugiat nunc eget venenatis. Duis eu mi vitae mauris rhoncus placerat.
+
+                    Nam eu ipsum non erat semper commodo. Sed aliquet ante maximus massa venenatis lobortis. Donec urna enim, scelerisque eu magna non, vestibulum interdum dolor. Fusce tellus felis, finibus et massa eget, varius eleifend leo. Sed volutpat egestas nisi et rutrum. Vivamus pulvinar eros et volutpat bibendum. Aliquam erat volutpat. Suspendisse ut pretium lorem, in molestie erat. Integer mollis ultrices enim. Aenean sollicitudin nulla urna, nec sagittis velit convallis ac. Nunc in orci quam. Fusce aliquam venenatis ante eu faucibus. In hac habitasse platea dictumst.
+
+                    Curabitur eget tincidunt mauris. Aenean egestas eros lacinia sem sollicitudin sollicitudin. Donec faucibus magna non venenatis egestas. Donec tincidunt nulla quis tincidunt euismod. Ut at bibendum ex. Phasellus commodo arcu eget ligula lacinia sodales. Praesent eget scelerisque ipsum. Vivamus molestie egestas nibh, quis convallis tortor vehicula ut. Donec turpis mi, tincidunt eget tristique et, cursus in erat. Mauris eu urna massa. Cras a ex vitae nunc condimentum imperdiet vel at nibh. Duis at purus id orci gravida sagittis. Suspendisse potenti. Vestibulum rhoncus turpis quis erat lobortis, vel efficitur leo consequat.
+
+                    Sed ullamcorper a enim vitae finibus. Donec imperdiet lorem sit amet sapien tincidunt, dignissim posuere risus molestie. Vivamus tristique lectus tellus, vulputate tristique ex commodo cursus. Fusce arcu ex, porttitor eget consequat eu, facilisis eget massa. Aliquam sit amet dapibus leo, eget euismod enim. Integer at lorem sit amet enim tristique iaculis ac nec odio. Morbi elementum accumsan magna a lobortis. Donec vel nulla vulputate, mollis magna quis, mattis leo. Sed bibendum tortor volutpat mauris tincidunt sodales.
+                </p>
+                <span class="about__sign">
+                    Mateusz Szymański
+                </span>
+            </div>
+            <button class="about__close about-me-button">Zamknij</button> 
+            <div class="about__backstripe about__backstripe--red"></div>
+            <div class="about__backstripe about__backstripe--blue"></div>   
+        </article>
+        <section class="section">
+            <h2 class="section__title">Umiejętności</h2>
+            <div class="section__content" id="skills-content">
+                <ul class="section__list">
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Języki programowania: </span><span class="section__item-description">HTML / CSS / JavaScript</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Frameworki: </span><span class="section__item-description">Bootstrap / React</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Preprocesory: </span><span class="section__item-description">SASS</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Inne: </span><span class="section__item-description">GIT / SEO / BEM</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Język angielski: </span><span class="section__item-description">B1</span></li>
+                </ul>
+                <img src="img/skills.png" class="section__image">
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title">Doświadczenie zawodowe</h2>
+            <div class="section__content" id="eperience-content">
+                <ul class="section__list">
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">(2013-2017) March Foods: </span><span class="section__item-description">Line Leader</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">(2018-2021) Zapar: </span><span class="section__item-description">Kierowca międzynarodowy kat. C + E</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">(2021-) SP@KO3 sp. z o.o: </span><span class="section__item-description">Kierowca międzynarotowy kat. C + E</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">(2022-) Profitiweb: </span><span class="section__item-description">Działalność freelancerska - Web Development</span></li>
+                </ul>
+                <img src="img/experience.png" class="section__image">
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title">Wykształcenie i kursy</h2>
+            <div class="section__content">
+                <ul class="section__list">
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">XXVII LO Lublin: </span><span class="section__item-description">Wykształcenie średnie maturalne</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Udemy: </span><span class="section__item-description">Kurs Web Developer Tworzenie stron od zera do Mastera</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Udemy: </span><span class="section__item-description">Kurs JavaScript od zera do Mastera</span></li>
+                    <li class="section__list-item"><span class="section__item-bold golden-letter">Pasja informatyki: </span><span class="section__item-description">Kurs HTML / CSS /JavaScript / Bootstrap</span></li>
+                </ul>
+                <img src="img/school.png" class="section__image">
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section__title">Kontakt</h2>
+            <div class="section__content">
+                <ul class="section__list">
+                    <li class="section__list-item"><span class="section__item-bold  golden-letter">Nr Telefonu:</span><span class="section__item-description"> 780 181 093</span></li>
+                    <li class="section__list-item"><span class="section__item-bold  golden-letter">Email:</span><span class="section__item-description"> profitiweb@gmail.com</span></li>
+                    <li class="section__list-item"><span class="section__item-bold  golden-letter">LinkedIn:</span><span class="section__item-description"> profil linkedIn</span></li>
+                </ul>
+                <img src="img/contact.png" class="section__image">
+            </div>
+        </section>
+    </main>
+    <footer class="rodo">
+        <p class="rodo__content">
+            Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
+        </p>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

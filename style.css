@@ -1,0 +1,474 @@
+/*---------------------- GLOBAL ----------------------*/
+
+:root
+{
+    --blue: rgba(3, 3, 55, 0.749);
+    --full-blue: rgb(3, 3, 55);
+    --gold: rgb(180, 146, 60);
+    --gold-transparent: rgba(218, 165, 32, 0.845);
+    --red: rgb(76, 0, 0);
+    --red-cherry: rgb(70, 0, 0);
+    --red-transparent: rgba(76, 0, 0, 0.749);
+}
+
+body
+{
+    background-image: url(img/mainpattern.jpg);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100vw;
+}
+
+/*---------------------- HEADER ----------------------*/
+
+.header
+{
+    align-items: center;
+    background-image: url("img/pattern.jpg");
+    border-bottom: 5px solid var(--gold);
+    box-shadow: inset 0 0 0 1000px var(--blue);
+    display: flex;
+    flex-direction: column;
+    height: 19em;
+    position: relative;
+}
+
+.header__name
+{
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.header__position
+{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+}
+
+.header__avatar
+{
+    border: 5px solid var(--gold);
+    border-radius: 50%;
+    height: 14em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -2em;
+    width: 14em;
+    z-index: 1;
+}
+
+.header__shadow
+{
+    background: linear-gradient(var(--gold), transparent);
+    height: 25px;
+    margin-top: -1px;
+    width: 100vw;
+}
+
+/*---------------------- MAIN ----------------------*/
+
+main
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6em;
+}
+
+/*---------------------- ABOUT-ME-BUTTON + ABOUT ----------------------*/
+
+.about-me-button
+{
+    background: linear-gradient(90deg, var(--gold), rgb(229, 209, 93));
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 120px;
+    z-index: 1;
+}
+
+
+.about-me-button::after
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+    height: 150%;
+    left: -70px;
+    position: absolute;
+    top: -20px;
+    transform: rotate(15deg);
+    transition: transform 0.3s;
+    width: 60px;
+}
+
+.about-me-button:hover
+{
+    cursor: pointer;
+}
+
+.about-me-button:hover::after
+{
+    transform: translateX(200px) rotate(15deg);
+}
+
+.about
+{
+    align-items: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-image: url(img/mainpattern.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.864);
+    display: flex;
+    flex-direction: column;
+    height: 101vh;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+}
+
+.about__box
+{
+    background: rgb(222, 221, 179);
+    height: 80vh;
+    overflow-y: scroll;
+    width: 80vw;
+}
+
+.about__box-title
+{
+    font-family: 'Noto Serif', serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about__box-content
+{
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 3vw;
+    text-align: justify;
+}
+
+.about__sign
+{
+    display: block;
+    font-family: 'Hurricane', cursive;
+    font-size: 36px;
+    margin-right: 4vw;
+    text-align: end;
+}
+
+.about__close
+{
+    margin-top: 2%;
+}
+
+.about__backstripe
+{
+    border: 3px solid var(--gold);
+    height: 120vh;
+    position: absolute;
+    transform: rotate(-15deg);
+    width: 20vw;
+    z-index: -1;
+}
+
+.about__backstripe--red
+{
+    background-image: url("img/pattern.jpg");
+    box-shadow: inset 0 0 0 1000px var(--red-transparent);
+    right: 0;
+}
+
+.about__backstripe--blue
+{
+    right: 25vw;
+    background-image: url("img/pattern.jpg");
+    box-shadow: inset 0 0 0 1000px var(--blue);
+}
+
+/*---------------------- SECTIONS ----------------------*/
+
+.section
+{
+    background-color: var(--red);
+    box-shadow: inset 0 0 0 1000px var(--red);
+    border: 2px solid var(--gold);
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 80vw;
+    animation-name: x;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.section__title
+{
+    background: var(--red-cherry);
+    border-radius: 20px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.section__content
+{
+    display: flex;
+    justify-content: space-between;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section__list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section__list-item
+{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    list-style-type: none;
+    line-height: 2;
+    z-index: 2;
+}
+
+.section__item-bold
+{
+    font-weight: bold;
+}
+
+.section__item-bold::before
+{
+    content: "\269C";
+    color: var(--gold);
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.section__image
+{
+    background-image: url("img/pattern.jpg");
+    box-shadow: inset 0 0 0 1000px var(--red-transparent);
+    margin: 30px;
+    opacity: 0.7;
+    padding: 100px;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    transform: rotate(-15deg);
+    z-index: 1;
+}
+
+/*----------------------FOOTER / RODO ----------------------*/
+
+.rodo
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation-name: x;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.rodo__content
+{
+    color: var(--blue);
+    width: 80vw;
+}
+
+/*---------------------- GLOBAL ANIMATIONS AND PROPERTIES ----------------------*/
+
+.golden-letter
+{
+    color: var(--gold);
+}
+
+.invisible
+{
+    display: none;
+}
+
+.fade-in
+{
+    animation: fade-in;
+    animation-duration: 0.7s;
+}
+
+.fade-out
+{
+    animation: fade-out;
+    animation-duration: 0.7s;
+}
+
+
+@keyframes fade-in
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out
+{
+    from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes x
+{
+    0% 
+    {
+        left: -100vw;
+    }
+    100% 
+    {
+        left: 0;
+    }
+}
+
+/*----------------------MEDIA ONLY ----------------------*/
+
+@media only screen and (max-width: 600px) {
+
+    .header
+    {
+        height: 17em;
+    }
+
+    .header__name
+    {
+        font-size: 2em;
+    }
+
+    .header__position
+    {
+        font-size: 1.5em;
+    }
+
+    .header__avatar
+    {
+        height: 12em;
+        width: 12em;
+    }
+
+    main
+    {
+        margin-top: 4em;
+    }
+
+    .about__box
+    {
+        width: 95vw;
+    }
+
+    .about__sign
+    {
+        margin: 0;
+        text-align: center;
+    }
+
+    .section 
+    {
+        width: 95vw;
+    }
+
+    .section__title
+    {
+        padding: 0;
+        text-align: center;
+    }
+
+    .section__list 
+    {
+        padding: 0 5px;
+    }
+
+    .section__list-item
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__item-description
+    {
+        padding-left: 20px;
+    }
+
+    .section__image
+    {
+        background-image: none;
+        left: 0px;
+        opacity: 0.5;
+        top: 0px;
+    }
+
+    li > .golden-letter
+    {
+    color: rgb(163, 145, 113);
+    }
+
+}
+
+/*----------------------MEDIA ONLY (300px)----------------------*/
+
+@media only screen and (max-width: 300px)
+{
+    .header
+    {
+        height: 14em;
+    }
+
+    .header__name
+    {
+        font-size: 1.5em;
+    }
+
+    .header__position
+    {
+        font-size: 1.2em;
+    }
+
+    .header__avatar
+    {
+        border: 3px solid var(--gold);
+        height: 10em;
+        width: 10em;
+    }
+}
